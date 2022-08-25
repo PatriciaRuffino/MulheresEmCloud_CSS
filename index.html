@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    
+    <title>Patricia Ruffino</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img class="logo" src="./img/logo.png" alt="">
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/PatriciaRuffino">Github</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/patriciaruffino/">Linkedin</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:sindelformr@gmail.com">Email</a>
+            </li>
+            
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Patricia Ruffino</h1>
+                <h5>Devops | Cloud Computing</h5>
+            </div>
+                <div onclick="displayAbout()" class="arrow">
+                    <i><img id="animation" src="./img/go-down.png" alt="seta"></i>
+                </div>
+                <div style="display: none;" id="about">
+                    <p>
+                        Olá, meu nome é Patricia Ruffino, sou estudante de desenvolvimento de software,
+                        formada em Gestão financeira, mas há 1 ano decidi mudar para área de tecnologia, comecei com ciências de dados
+                        mas logo migrei para programação.
+                        Ontem, dia 24 de agosto, comecei a minha jornada no bootcamp <strong>Mulheres em Cloud</strong>
+                        junto com mais 59 mulheres incríveis!
+                        Só tenho a agradecer a gama academy e a McKinsey & Company pela oportunidade!
+                    </p>
+                    <img id="cloud" src="./img/cloud.png" alt="">
+                </div>
+                
+            <div class="form">
+                <div>
+                    <p>Deixe o seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Digite o seu email!">
+                    <button>enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayAbout(){
+            let arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            let display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

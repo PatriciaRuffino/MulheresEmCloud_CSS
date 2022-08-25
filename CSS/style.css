@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #D3D3D3;
+}
+
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    background: linear-gradient(90deg, #0f0c29, #302b63, #24243e)
+}
+
+.logo {
+    width: 90px;
+    border-radius: 5px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#animation {
+   margin: 0 auto;
+   padding: 15px;
+   cursor: pointer;
+   animation: blink 1s steps(5, start) infinite;
+}
+@keyframes blink {
+    to{
+        visibility: hidden;
+    }
+}
+#animation {
+    transition: 300ms;
+}
+
+.rotate {
+ transform: rotate(180deg);
+ transition: 300ms;
+}
+
+.active{
+    display: block !important;
+}
+
+.container {
+    text-align: center;
+}
+
+.container .name h1 {
+    font-size: 60px;
+    margin-top: 30px;
+}
+
+.container .name h5 {
+    font-size: 25px;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+#cloud{
+    width: 500px;
+    padding: 30px;
+}
+.form {
+    width: 40%;
+    margin: 30px auto;
+    border: thick double;
+    padding: 25px;
+}
+.form div{
+    padding-bottom: 20px;
+}
+
+.form input {
+    width: 50%;
+    text-align: center;
+    border-radius: 5px 0 0 5px; 
+    padding: 5px 10px;
+    background-color: #D3D3D3; 
+
+}
+.form button {
+    width: 20%;
+    cursor: pointer;
+    font-weight: 700;
+    background: linear-gradient(to right, #ed714e 50%, #dd571d 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 300ms ease-out;
+    border-radius: 0 5px 5px 0;
+    margin-left: -4px;
+    padding: 5px 10px;
+}
+.form button:hover{
+    background-position: left bottom;
+    color: #5E0A0B;
+    border: none;
+}
+
+.form input,
+button {
+    height: 30px;
+    border: none;
+    color: #24243e;
+}
+.form input:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 1px ;
+
+}
+header ul{
+    display: flex;
+}
+header ul li a{
+    padding: 10px;
+    transition: 1s;
+}
+header ul li a:hover{
+    color:#ed714e ;
+}
+@media only screen and (max-width: 768px){
+    .form{
+        width: 100%;
+        border: none;
+    }
+}
+@media only screen and (max-width: 480px){
+    .container .name h1{
+        font-size: 30px;
+    }
+    .container .name h5{
+        font-size: 15px;
+    }
+    #about p {
+        max-width: 75%;
+        text-align: justify;
+        font-size: 12px;
+    }
+    #cloud{
+        width: 300px;
+    }
+}
